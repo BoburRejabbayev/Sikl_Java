@@ -10,21 +10,15 @@ public class Fibanacci {
 
     private static void fibanacci(Scanner num) {
         double f = num.nextDouble();
-        double a, b, c, x, y;
-        a = 0;
-        b = 1;
-        c = a + b;
-//        x = a + b;
-//        y = 2;
-
+        double a=0, b=1, c=a+b, x=a+b, y=2;
         do{
-//            y++;
-//            x = x + c;
+            y++;
+            x = x + c;
             a = b;
             b = c;
             c = a + b;
         }while( c <= f );
-//        double d = x/y;
-        System.out.println(c);
+        double d = x/y;
+        System.out.println(b);
     }
 }
